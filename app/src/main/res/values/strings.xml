@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ListView Test</string>
+    <string-array name="countries">
+
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Bangladesh</item>
+        <item>Bhutan</item>
+        <item>China</item>
+        <item>Canada</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Ethopia</item>
+        <item>France</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Nigeria</item>
+        <item>Poland</item>
+        <item>Russia</item>
+        <item>Singapore</item>
+        <item>Syria</item>
+        <item>Scotland</item>
+        <item>Taiwan</item>
+        <item>United States</item>
+        <item>United Kingdom</item>
+        <item>Zimbabwe</item>
+    </string-array>
+</resources>
