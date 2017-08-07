@@ -49,14 +49,12 @@ public class MyCustomListviewAdapter extends BaseAdapter {
 
         if (view == null) {
             LayoutInflater inflater = activity.getLayoutInflater();
-//            view = inflater.inflate(R.layout.mylistviewstyleone, viewGroup, false);
             view = inflater.inflate(R.layout.mylistviewstyletwo, viewGroup, false);
         }
-//        ((TextView)view.findViewById(R.id.textView)).setText(countryList[i]+"*");
 
         String url = countryCodes[i];
         ((TextView)view.findViewById(R.id.textView2)).setText(countryList[i]);
-        ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
+        ImageView imageView = view.findViewById(R.id.imageView);
         Picasso.with(activity).load(url).into(imageView);
 
         return view;

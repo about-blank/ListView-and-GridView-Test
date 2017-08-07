@@ -10,7 +10,7 @@
         android:id="@+id/headerText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ListView implementation options !!"
+        android:text="ListView &amp; GridView test !!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -34,9 +34,64 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <RelativeLayout
+                android:background="@drawable/customborder"
+                android:id="@+id/relativelayout_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewWidgetHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Widget type"/>
+                <RadioGroup
+                    android:layout_below="@id/textViewWidgetHeader"
+                    android:id="@+id/radioGroupListGrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButtonList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:checked="true"
+                        android:textColorHighlight="#000000"
+                        android:text="ListView" />
 
+                    <RadioButton
+                        android:id="@+id/radioButtonGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColorHighlight="#000000"
+                        android:text="GridView" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@drawable/customborder"
+                android:id="@+id/relativelayout_implementation"
+                android:layout_below="@id/relativelayout_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewImplementationHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Implementation type"/>
             <RadioGroup
+                android:layout_below="@id/textViewImplementationHeader"
                 android:id="@+id/radioGroup"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
 
@@ -78,12 +133,13 @@
                     android:layout_marginBottom="8dp"
                     android:text="Using custom adapter" />
             </RadioGroup>
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/tryit_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/radioGroup"
+                android:layout_below="@id/relativelayout_implementation"
                 android:layout_marginTop="16dp"
                 android:layout_centerHorizontal="true"
                 android:text="Try It !!" />
