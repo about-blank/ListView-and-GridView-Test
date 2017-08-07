@@ -18,6 +18,8 @@ public class ListViewStyleTwo extends AppCompatActivity implements AdapterView.O
     ListView listView;
     GridView gridView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
