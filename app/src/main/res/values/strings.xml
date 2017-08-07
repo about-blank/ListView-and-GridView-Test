@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">ListView Test</string>
     <string-array name="countries">
-
         <item>Australia</item>
         <item>Austria</item>
         <item>Bangladesh</item>
@@ -10,7 +9,6 @@
         <item>Canada</item>
         <item>Denmark</item>
         <item>Egypt</item>
-        <item>Ethopia</item>
         <item>France</item>
         <item>Hungary</item>
         <item>India</item>
@@ -20,10 +18,32 @@
         <item>Russia</item>
         <item>Singapore</item>
         <item>Syria</item>
-        <item>Scotland</item>
         <item>Taiwan</item>
         <item>United States</item>
         <item>United Kingdom</item>
         <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="country_codes">
+        <item>http://img.freeflagicons.com/thumb/round_icon/australia/australia_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/austria/austria_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/bangladesh/bangladesh_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/bhutan/bhutan_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/china/china_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/canada/canada_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/denmark/denmark_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/egypt/egypt_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/france/france_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/hungary/hungary_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/india/india_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/ireland/ireland_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/nigeria/nigeria_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/poland/poland_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/russia/russia_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/singapore/singapore_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/syria/syria_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/republic_of_china/republic_of_china_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/united_states_of_america/united_states_of_america_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/united_kingdom/united_kingdom_640.png</item>
+        <item>http://img.freeflagicons.com/thumb/round_icon/zimbabwe/zimbabwe_640.png</item>
     </string-array>
 </resources>

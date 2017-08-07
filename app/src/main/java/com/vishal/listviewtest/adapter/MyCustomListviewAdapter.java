@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.vishal.listviewtest.ListViewStyleTwo;
 import com.vishal.listviewtest.R;
 
@@ -16,18 +18,20 @@ import com.vishal.listviewtest.R;
 
 public class MyCustomListviewAdapter extends BaseAdapter {
 
-    private String[] data;
+    private String[] countryList;
+    private String[] countryCodes;
     private ListViewStyleTwo activity;
     public MyCustomListviewAdapter() {}
 
-    public MyCustomListviewAdapter(Activity activity, String[] data) {
-        this.data = data;
+    public MyCustomListviewAdapter(Activity activity, String[] data, String[] codes) {
+        this.countryList = data;
+        this.countryCodes = codes;
         this.activity = (ListViewStyleTwo)activity;
     }
 
     @Override
     public int getCount() {
-        return data.length;
+        return countryList.length;
     }
 
     @Override
@@ -45,9 +49,15 @@ public class MyCustomListviewAdapter extends BaseAdapter {
 
         if (view == null) {
             LayoutInflater inflater = activity.getLayoutInflater();
-            view = inflater.inflate(R.layout.mylistviewstyleone, viewGroup, false);
+//            view = inflater.inflate(R.layout.mylistviewstyleone, viewGroup, false);
+            view = inflater.inflate(R.layout.mylistviewstyletwo, viewGroup, false);
         }
-        ((TextView)view.findViewById(R.id.textView)).setText(data[i]+"*");
+//        ((TextView)view.findViewById(R.id.textView)).setText(countryList[i]+"*");
+
+        String url = countryCodes[i];
+        ((TextView)view.findViewById(R.id.textView2)).setText(countryList[i]);
+        ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
+        Picasso.with(activity).load(url).into(imageView);
 
         return view;
     }

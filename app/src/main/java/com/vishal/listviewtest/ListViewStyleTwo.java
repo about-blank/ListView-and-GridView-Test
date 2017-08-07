@@ -26,6 +26,7 @@ public class ListViewStyleTwo extends AppCompatActivity {
         }
 
         String[] countryList = getResources().getStringArray(R.array.countries);
+        String[] countryCodes = getResources().getStringArray(R.array.country_codes);
 
         if(implementationStyle == 2) {
 
@@ -41,7 +42,7 @@ public class ListViewStyleTwo extends AppCompatActivity {
         } else if(implementationStyle == 4) {
 
             setTitle("ListView style - 4");
-            MyCustomListviewAdapter adapter = new MyCustomListviewAdapter(this, countryList);
+            MyCustomListviewAdapter adapter = new MyCustomListviewAdapter(this, countryList, countryCodes);
             listView.setAdapter(adapter);
         }
 
